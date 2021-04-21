@@ -15,4 +15,8 @@ app.get('/', (req, res) => {
 app.use('/birthdays', birthdayRoutes);
 
 
-app.listen(PORT, () => console.log(`Server Running in port: http://localhost:${PORT}`));
+
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+    console.log(`Server Running in port: http://localhost:${PORT}`);
+})
