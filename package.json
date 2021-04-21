@@ -1,0 +1,25 @@
+{
+  "name": "node_express_api_birthdays",
+  "version": "1.0.0",
+  "description": "API endpoints for birthday memory application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "api",
+    "birthday",
+    "memory"
+  ],
+  "author": "Firus Hanov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
