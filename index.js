@@ -4,18 +4,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
 
-const url =
-    `mongodb+srv://d00363593:d00363593@cluster0.dvshs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
-
-const birthdaySchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    birthday: String
-})
-
-const Birthday = mongoose.model('Birthday', birthdaySchema)
 
 
 
