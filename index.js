@@ -1,9 +1,12 @@
 import express from 'express';
 import birthdayRoutes from './routes/birthdays.js';
+import bodyParser from 'body-parser';
 
 
 const app = express();
 const PORT = 5000;
+
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.send('Hello from home page');
@@ -12,4 +15,4 @@ app.get('/', (req, res) => {
 app.use('/birthdays', birthdayRoutes);
 
 
-app.listen(PORT, () => console.log(`Server is running on port# ${PORT}`));
+app.listen(PORT, () => console.log(`Server Running in port: http://localhost:${PORT}`));
